@@ -1,0 +1,75 @@
+/* font */
+
+:root {
+    /* variables */
+    --black: #000000;
+    --ocean-blue: #1974D2;
+}
+
+* {
+    margin: 0;
+    box-sizing:border-box;
+}
+
+main {
+    width:50%;
+    margin:0 auto;
+    padding:5rem;
+    /* border:2px solid black; */
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    text-align: center;
+}
+
+
+#loading-screen {
+    border:2px solid lightgray;
+    padding:2em;
+    width:100%;
+    max-width:1200px;
+    position: relative;
+    box-shadow: 0 0 10px -5px #999;
+
+}
+
+@keyframes waterFlow {
+    0% { display:block; }
+    100% { padding-top: 34rem; }
+}
+
+@keyframes waterText {
+    0% {content: "Loading..."}
+    100% {content: "Loaded!"}
+}
+
+#water-background {
+    width:100%;
+    padding-top:.1rem;
+    background:var(--ocean-blue);
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    display:hidden;
+    animation: waterFlow 5s;
+    animation-delay: delay 2s;
+    animation-fill-mode: both;
+    
+}
+
+
+
+#fish-sprite {
+    padding:1rem;
+}
+
+#fish-sprite img {
+    max-width:50%;
+    width:2px;
+}
+
+p {
+    font-weight: 700;
+    font-size: 2em;
+    color:var(--ocean-blue)
+}
