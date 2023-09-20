@@ -35,7 +35,7 @@ main {
 
 @keyframes waterFlow {
     0% { display:block; }
-    100% { padding-top: 34rem; }
+    100% { padding-top: 28.5rem; }
 }
 
 @keyframes waterText {
@@ -46,7 +46,7 @@ main {
 #water-background {
     width:100%;
     padding-top:.1rem;
-    background:var(--ocean-blue);
+    background:#016890;
     position: absolute;
     bottom:0px;
     left:0px;
@@ -57,22 +57,24 @@ main {
     animation-fill-mode: both;
 }
 
+
 #fish-sprite {
-    padding:1rem;
+    padding:.5rem;
+    max-width:70%;
 }
 
 #fish-sprite img {
-    max-width:50%;
-    width:2px;
+    width:80%;
 }
 
 .status-text{
     font-weight: 700;
     font-size: 2em;
-    padding:1em;
+    padding:.5em;
 
     color:white;
     background:#f27508;
+    border-radius: 1rem;
 }
 
 .status-text:after {
