@@ -35,7 +35,7 @@ main {
 
 @keyframes waterFlow {
     0% { display:block; }
-    100% { padding-top: 28.5rem; }
+    100% { padding-top: 34rem; }
 }
 
 @keyframes waterText {
