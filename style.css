@@ -46,7 +46,7 @@ main {
 #water-background {
     width:100%;
     padding-top:.1rem;
-    background:#016890;
+    background:var(--ocean-blue);
     position: absolute;
     bottom:0px;
     left:0px;
@@ -55,16 +55,6 @@ main {
     animation: waterFlow 5s;
     animation-delay: delay 2s;
     animation-fill-mode: both;
-}
-
-
-#fish-sprite {
-    padding:.5rem;
-    max-width:70%;
-}
-
-#fish-sprite img {
-    width:80%;
 }
 
 .status-text{
