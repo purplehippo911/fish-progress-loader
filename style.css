@@ -50,14 +50,12 @@ main {
     position: absolute;
     bottom:0px;
     left:0px;
+    opacity:0.6;
     display:hidden;
     animation: waterFlow 5s;
     animation-delay: delay 2s;
     animation-fill-mode: both;
-    
 }
-
-
 
 #fish-sprite {
     padding:1rem;
@@ -68,8 +66,18 @@ main {
     width:2px;
 }
 
-p {
+.status-text{
     font-weight: 700;
     font-size: 2em;
-    color:var(--ocean-blue)
+    padding:1em;
+
+    color:white;
+    background:#f27508;
+}
+
+.status-text:after {
+    content: "Loading...";
+    animation: waterText 7s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
 }
